@@ -5,5 +5,5 @@ MAINTAINER sb
 RUN apt-get update && apt-get install -y gcc make libssl-dev libhdhomerun-dev liburiparser-dev libdbus-1-dev && mkdir -p /root/Videos
 ADD install /usr/local/bin/myinstall
 
-CMD ["/mysrc/install.sh"]
+CMD ["/bin/bash", "/mysrc/install.sh"]
 
